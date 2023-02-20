@@ -1,28 +1,26 @@
 #include <stdio.h>
 /**
- * main - Entry point
+ * main - entry point
  *
- * Return: Always 0 (Success)
+ * Return: ALways 0 (Success)
  */
-
 int main(void)
 {
-	int a, b;
+	int x, y;
 
-	for (a = '0'; b < '9'; b++)
+	for (x = 48; y <= 56; y++)
 	{
-		for (a = b + 1; b <= '9'; b++)
+		for (y = 49; y <= 57; y++)
 		{
-			if (a != b)
+			if (x > y)
 			{
-				putchar(a);
-				putchar(b);
-
-				if (a == '8' && b == '9')
-					continue;
-
-				putchar(',');
-				putchar(' ');
+				putchar(x);
+				putchar(y);
+				if (x != 56 || y != 57)
+				{
+					putchar(',');
+					putchar(' ');
+				}
 			}
 		}
 	}
