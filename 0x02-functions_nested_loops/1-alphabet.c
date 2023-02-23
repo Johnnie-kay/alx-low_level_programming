@@ -1,8 +1,10 @@
 #include "main.h"
 /**
- * main: empty
- * print_alphabet: entry point
- * Description: prints the alphabets in lowercase followed by a new line
+ * main: entry point
+ *
+ * print_alphabet: prints alphabets in lowercase.
+ *
+ * Description: prints the alphabets in lowercase, followed by a new line.
  *
  * Return:0
  */
