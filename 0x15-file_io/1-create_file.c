@@ -1,10 +1,12 @@
 #include "main.h"
+#include <stddef.h>
+#include <unistd.h>
 
 /**
- * create_file - a function that creates file
- * @filename: a pointer to point to the text
- * @text_content:the  pointer to string content
- * Return: success 1, failure -1
+ * create_file - function that creates a file
+ * @filename: pointer that points to the text
+ * @text_content: a pointer to str content
+ * Return: success(0), failure(-1) 
  */
 
 int create_file(const char *filename, char *text_content)
