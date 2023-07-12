@@ -1,10 +1,13 @@
 #include "main.h"
+#include <stddef.h>
+#include <stdlib.h>
+#include <unistd.h>
 
 /**
- * read_textfile - reads a txt file and prints it to the POSIX(Linux) standard output
- * @filename: name of the file to read
- * @letters: number of letters it should read and print out
- * Return: actual number of letters it could read and print out
+ * read_textfile - reads txt file and prints it out to the POSIX STDOUT
+ * @filename: name of file to read
+ * @letters: exact numbeers of letters it should read and print out
+ * Return: actual number of letters it could read and print
  */
 ssize_t read_textfile(const char *filename, size_t letters)
 {
