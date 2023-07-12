@@ -1,26 +1,7 @@
-#include "holberton.h"
+#include "main.h"
 
 /**
- * _strlen - computes the length of a NULL-terminated string
- * @str: string to be measured
- *
- * Return: the length of string, or (-1) if string is NULL
- */
-ssize_t _strlen(const char *str)
-{
-	ssize_t len = 0;
-
-	if (!str)
-		return (-1);
-
-	while (*str++)
-		++len;
-
-	return (len);
-}
-
-/**
- * create_file - create a file
+ * create_file - creates a file
  * @filename: the name of the file to create
  * @text_content: the data to write to filename
  *
